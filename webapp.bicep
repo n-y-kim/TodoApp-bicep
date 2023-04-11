@@ -1,6 +1,6 @@
 //make bicep file to deploy web app from github repository
 param webAppName string = uniqueString(resourceGroup().id) // Generate unique String for web app name
-param sku string = 'F1' // The SKU of App Service Plan
+param sku string = 'S1' // The SKU of App Service Plan
 param linuxFxVersion string = 'PYTHON|3.9' // The runtime stack for the web app
 param location string = resourceGroup().location // Location for all resources
 param repositoryUrl string = 'https://github.com/n-y-kim/TodoApp'
